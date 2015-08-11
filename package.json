@@ -1,0 +1,23 @@
+{
+  "name": "sonarr-api",
+  "version": "0.1.0",
+  "description": "Simple wrapper for querying against HTTP API on Sonarr",
+  "main": "lib/api.js",
+  "dependencies": {
+    "bluebird": "^2.9.2",
+    "request": "^2.36.0",
+    "lodash": "^3.10.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "sonarr",
+    "api"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "author": "Devin Buhl <devin.kray@gmail.com>",
+  "license": "MIT"
+}
