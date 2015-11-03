@@ -30,7 +30,7 @@ put - send a PUT request to the Sonarr API - if available returns json
 ## Examples
 
 ```js
-var SonarrAPI = require('./lib/api');
+var SonarrAPI = require('./lib/sonarr-api');
 
 var sonarr = new SonarrAPI({
 		hostname: 'localhost', 
