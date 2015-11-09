@@ -190,6 +190,9 @@ sonarr.get("series/lookup", { "term": "america" }).then(function (result) {
 
 ## Changelog
 
+### v0.1.1
+- Minor code clean up
+
 ### v0.1.0
 - Initial release
 
