@@ -5,12 +5,23 @@
   "main": "lib/api.js",
   "dependencies": {
     "bluebird": "^2.9.2",
-    "request": "^2.36.0",
+    "request": "^2.67.0",
     "lodash": "^3.10.0"
+  },
+  "devDependencies": {
+    "jscs": "^2.4.0",
+    "jshint": "^2.8.0"
+  },
+  "scripts": {
+    "test": "jshint lib/*"
   },
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/onedr0p/sonarr-api.git"
+  },
   "keywords": [
     "sonarr",
     "api"
@@ -19,5 +30,9 @@
     "node": ">=0.10"
   },
   "author": "Devin Buhl <devin.kray@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onedr0p/sonarr-api/issues"
+  },
+  "homepage": "https://github.com/onedr0p/sonarr-api#readme"
 }
