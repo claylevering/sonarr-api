@@ -22,10 +22,6 @@
         "no-use-before-define": 0,
         "import/no-unresolved": [2, {
             "ignore": ["electron"]
-        }],
-        "jsx-a11y/no-marquee": "off"
-    },
-    "plugins": [
-        "import"
-    ]
+        }]
+    }
 }
