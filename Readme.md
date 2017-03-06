@@ -11,13 +11,14 @@ Please refer to the [Sonarr API documentation](https://github.com/Sonarr/Sonarr/
 Instantiate a SonarrAPI client.
 
 Options:
-- **hostname**: hostname where Sonarr runs (required)
-- **apiKey**: Your API to access Sonarr (required)
-- **port**: port number Sonarr is listening on (optional, default: 8989)
-- **urlBase**: URL Base of Sonarr (optional, default: null)
-- **ssl**: Set to true if you are connecting via SSL (default: false)
-- **username**: HTTP Auth username (default: null)
-- **password**: HTTP Auth password (default: null)
+
+-   **hostname**: hostname where Sonarr runs (required)
+-   **apiKey**: Your API to access Sonarr (required)
+-   **port**: port number Sonarr is listening on (optional, default: 8989)
+-   **urlBase**: URL Base of Sonarr (optional, default: null)
+-   **ssl**: Set to true if you are connecting via SSL (default: false)
+-   **username**: HTTP Auth username (default: null)
+-   **password**: HTTP Auth password (default: null)
 
 ## Methods
 
@@ -33,7 +34,7 @@ put - send a PUT request to the Sonarr API - if available returns json
 var SonarrAPI = require('./lib/sonarr-api');
 
 var sonarr = new SonarrAPI({
-		hostname: 'localhost', 
+		hostname: 'localhost',
 		apiKey: '(insert your API key here)',
 		port: 9000,
 		urlBase: '/sonarr'
@@ -190,16 +191,23 @@ sonarr.get("series/lookup", { "term": "america" }).then(function (result) {
 
 ## Changelog
 
+### v0.2.0
+
+-   Rewrote module to utilize ES6 classes / promises
+
 ### v0.1.1
-- Minor code clean up
+
+-   Minor code clean up
 
 ### v0.1.0
-- Initial release
+
+-   Initial release
 
 ## License
+
 (The MIT License)
 
-Copyright (c) 2015 Devin Buhl &lt;devin.kray@gmail.com&gt;
+Copyright (c) 2015 Devin Buhl <mailto:devin.kray@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
